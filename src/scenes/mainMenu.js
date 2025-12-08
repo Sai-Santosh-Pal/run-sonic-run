@@ -19,6 +19,10 @@ export default function mainMenu() {
     k.onUpdate(() => {
         if (bgPieces[1].pos.x < 0) {
             bgPieces[0].moveTo(bgPieces[1].pos.x + bgPieceWidth * 2, 0);
+            bgPieces.push(bgPieces.shift());
         }
+
+        bgPieces[0].move(-100, 0)
+        bgPieces[1],moveTo(bgPieces[0].pos.x + bgPieceWidth * 2, 0);
     });
 }
