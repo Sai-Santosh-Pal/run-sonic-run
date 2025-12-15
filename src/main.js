@@ -4,6 +4,7 @@ import gameover from "./scenes/gameover.js";
 import mainMenu from "./scenes/mainMenu";
 
 k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
+k.loadSprite("next-bg", "graphics/upside-down.jpeg");
 k.loadSprite("platforms", "graphics/platforms.png");
 k.loadSprite("sonic", "graphics/sonic.png", {
   sliceX: 8,
@@ -25,6 +26,20 @@ k.loadSprite("motobug", "graphics/motobug.png", {
   sliceY: 1,
   anims: {
     run: { from: 0, to: 4, loop: true, speed: 8 },
+  },
+});
+k.loadSprite("fly", "graphics/platforms.png", {
+  sliceX: 25,
+  sliceY: 2,
+  anims: {
+    run: { from: 26, to: 26, loop: true, speed: 8 },
+  },
+});
+k.loadSprite("slime", "graphics/slime.png", {
+  sliceX: 8,
+  sliceY: 3,
+  anims: {
+    run: { from: 0, to: 15, loop: true, speed: 8 },
   },
 });
 k.loadFont("mania", "fonts/mania.ttf");
